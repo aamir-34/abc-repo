@@ -64,5 +64,5 @@ jobs:
 
             git push 
 
-           #echo the new image tag $git_hash is updated
+           echo the new image tag $git_hash is updated
 

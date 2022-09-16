@@ -4,14 +4,14 @@ on:
   push:
     branches:
       - main
-
+      
 env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   GKE_CLUSTER: work-cluster
   GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: github-actions-gke
   IMAGE: github-actions-gke-image10
-  TAG: 1.0.0
+  TAG: ${{ git.sha }}
 
 jobs:
   setup-build-publish-deploy:

@@ -56,7 +56,7 @@ jobs:
            
            git config --global user.name "aamir-34"
 
-           git config --global user.email "Aamir@750567"
+           git config --global user.email "aq702654@gmail.com"
            
            git remote set-url origin https://aamir-34:${PAT}@github.com/aamir-34/abcd-repo.git 
              

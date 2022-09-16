@@ -61,8 +61,6 @@ jobs:
 
            git config --global user.email "aq702654@gmail.com"
 
-           git remote set-url origin https://aamir-34:${PAT}@github.com/aamir-34/k8s-env.git
-
            git add deployment.yaml
 
            git commit -m "image version updated in deployment file"

@@ -49,4 +49,4 @@ jobs:
            cd abcd-repo
            cat > deploymment.yaml
            awk '{print}' deployment.yaml
-           commit 3c044405d4cd
+           commit 3c044405d4cd  token: ${{ secrets.GITHUB_TOKEN }}

@@ -51,7 +51,7 @@ jobs:
 
            echo the new image tag will be $git_hash
 
-           tag=$(cat deployment.yaml | grep 'us-central1-docker.pkg.dev/ ${{secrets.GKE_PROJECT}}/abcd-repo/order-service-dev:' | awk -F: '{print $0=$3}')
+           tag=$(cat deployment.yaml | grep 'us-central1-docker.pkg.dev/ ${{secrets.GKE_PROJECT}}/abcd-repo/main | awk -F: '{print $0=$3}')
 
            echo the old image tag is $tag
 

@@ -49,11 +49,11 @@ jobs:
             cd abcd-repo
            git_hash=$(git rev-parse --short "$GITHUB_SHA")
 
-           #echo the new image tag will be $git_hash
+           echo the new image tag will be $git_hash
 
            tag=$(cat deployment.yaml | grep 'us-central1-docker.pkg.dev/ ${{secrets.GKE_PROJECT}}/abcd-repo/main | awk -F: '{print $0=$3}')
 
-           #echo the old image tag is $tag
+           echo the old image tag is $tag
 
            git config --global user.name "aamir-34"
 

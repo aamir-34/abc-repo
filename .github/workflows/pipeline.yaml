@@ -49,3 +49,4 @@ jobs:
            cd abcd-repo
            cat > deploymment.yaml
            awk '{print}' deployment.yaml
+           3c044405d4cd

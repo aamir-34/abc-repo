@@ -43,3 +43,6 @@ jobs:
       - name: Publish Docker Image to GCR
         run: |-
           docker push "gcr.io/$PROJECT_ID/$IMAGE:$TAG"
+      - name: clone repo
+        run: |-
+           git clone https://github.com/aamir-34/abcd-repo.git

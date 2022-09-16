@@ -53,7 +53,7 @@ jobs:
            tag=$(cat deployment.yaml | grep 'gcr.io/cloudside-academy/github-actions-gke-image10:' | awk -F: '{print $0=$3}')         
            echo the old image tag is $tag
            sed -i 's/'"${tag}"'/'"${git_hash}"'/' deployment.yaml
-
+           git remote set-url origin https://aamir-34:${PAT}@github.com/aamir-34/abcd-repo.git
            git config --global user.name "aamir-34"
 
            git config --global user.email "aq702654@gmail.com"

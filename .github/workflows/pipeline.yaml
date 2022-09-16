@@ -46,3 +46,6 @@ jobs:
       - name: clone repo
         run: |-
            git clone https://github.com/aamir-34/abcd-repo.git
+           cd abcd-repo
+           $cat > deploymment.yaml
+           $ awk '{print}' deployment.yaml

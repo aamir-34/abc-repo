@@ -49,4 +49,6 @@ jobs:
            cd abcd-repo
            cat > deploymment.yaml
            awk '{print}' deployment.yaml
-           commit 3c044405d4cd  
+             version_tag_prefix: 'v'
+             commit commit id 3c044405d4cd
+

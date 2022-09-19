@@ -28,7 +28,7 @@ jobs:
 
         https://github.com/aamir-34/abcd-repo.git
 
-        cd env-repo
+        cd abcd-repo
 
         git_hash=$(git rev-parse --short "$GITHUB_SHA")
 

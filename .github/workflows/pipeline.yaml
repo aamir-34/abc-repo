@@ -54,7 +54,7 @@ jobs:
            echo the old image tag is $tag
            sed -i 's/'"${tag}"'/'"${git_hash}"'/' deployment.yaml          
            
-           git config --global user.name "aamir-34 /abcd-repo"
+           git config --global user.name "aamir-34/abcd-repo"
 
            git config --global user.email "aq702654@gmail.com"
            

@@ -34,7 +34,7 @@ jobs:
 
         echo the new image tag will be $git_hash
 
-        tag=$(cat deploy.yaml | gcr.io/cloudside-academy/github-actions-gke-image10 | awk -F: '{print $0=$3}')
+        tag=$(cat deploy.yaml | gcr.io/cloudside-academy/github-actions-gke-image | awk -F: '{print $0=$3}')
 
         echo the old image tag is $tag
 

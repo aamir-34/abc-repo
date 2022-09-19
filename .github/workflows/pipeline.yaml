@@ -26,7 +26,7 @@ jobs:
 
       run: |-
 
-        git clone https://${PAT}@github.com/umesh-cloudside/env-repo.git -b app1
+        https://github.com/aamir-34/abcd-repo.git
 
         cd env-repo
 
@@ -34,17 +34,17 @@ jobs:
 
         echo the new image tag will be $git_hash
 
-        tag=$(cat deploy.yaml | grep 'asia-south1-docker.pkg.dev/ak-dev-apps/repo-dev-apps/coupon-service-dev:' | awk -F: '{print $0=$3}')
+        tag=$(cat deploy.yaml | gcr.io/cloudside-academy/github-actions-gke-image10 | awk -F: '{print $0=$3}')
 
         echo the old image tag is $tag
 
         sed -i 's/'"${tag}"'/'"${git_hash}"'/' deploy.yaml
 
-        git config --global user.name "umesh-cloudside"
+        git config --global user.name "aamir-34"
 
-        git config --global user.email "umesh@thecloudside.com"
+        git config --global user.email "aq702654@gmail.com"
 
-        git remote set-url origin https://umesh-cloudside:${PAT}@github.com/umesh-cloudside/env-repo.git
+        git remote set-url origin https://aamir-34:${PAT}@github.com/aamir-34/abcd-repo.git
 
         git add deploy.yaml
 

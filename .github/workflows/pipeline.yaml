@@ -22,7 +22,7 @@ jobs:
 
       env:
 
-        PAT: ${{secrets.PUSH_TOKEN}}
+        PAT: ${{secrets.PAT}}
 
       run: |-
 

@@ -18,7 +18,7 @@ jobs:
 
     steps:
 
-    - name: push image tag to env repo
+    - name: push image tag to abcd repo
 
       env:
 
